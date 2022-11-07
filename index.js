@@ -24,6 +24,7 @@ function calculate_time_zone() {
 		for (i = 0; i < document.getElementById('timezone').options.length; i++) {
 			if (document.getElementById('timezone').options[i].value == convert(std_time_offset)+","+dst) {
 				document.getElementById('timezone').selectedIndex = i;
+                document.getElementById('zone').innerHTML=document.getElementById('timezone').value
 				break;
 			}
 		}
@@ -55,3 +56,9 @@ function convert(value) {
 }
 
 onload = calculate_time_zone;
+
+
+
+function timedate(){
+    document.querySelector('#time1').innerHTML=document.querySelector('#time').value
+}
