@@ -22,12 +22,12 @@
     <div>
       <!-- Navbar -->
       <header
-        class="fixed top-0 left-0 w-screen flex items-center justify-center h-14"
+        class="absolute top-0 left-0 w-screen flex items-center justify-center h-14"
       >
         <nav class="w-full h-4/6 flex items-center justify-center" id="header">
           <ul
-            class="w-5/6 rounded-full h-full flex items-center justify-evenly w-full"
-            style="font-size: 20px; color: #333"
+            class="w-5/6 rounded-full h-full flex items-center justify-evenly w-full text-2xl text-[#333]"
+            
           >
             <li class="list-none inline-block mr-4">
               <a href="#Home">
@@ -89,7 +89,7 @@
       <!-- Contact Us -->
       <section
         id="Contact"
-        class="bg-[#111] min-h-screen flex items-center justify-center flex-col p-6 pt-20"
+        class="bg-[#111] min-h-screen flex items-center justify-center flex-col p-6 "
       >
         <h1
           class="text-[#444] text-[3.0vh] md:text-[3.1vw] lg:text-[2.0vw] mb-3 text-center sm:text-start"
@@ -97,19 +97,19 @@
           <strong>Let's talk about your business</strong>
         </h1>
         <div
-          class="h-full w-full bg-[#151515] rounded-lg flex flex-col sm:flex-row"
+          class="h-full w-full bg-[#111] rounded-lg flex shadow-black shadow-md flex-col sm:flex-row"
         >
           <form action="https://formsubmit.co/d27d85e6b84a041b6a60fe75532df508" method="post" 
-            class="flex-[2_2_0%] text-[#333] flex items-center justify-evenly flex-col gap-2 p-6"
+            class="flex-[2_2_0%] text-[#333]  flex items-center justify-evenly flex-col gap-2 p-6"
           >
             <div class="flex flex-row gap-8 w-full items-center">
               <div class="flex flex-col flex-1 gap-2">
                 <label for="1name">First Name</label>
                 <div
-                  class="bg-[#222] w-full h-10 flex items-center p-6 rounded-lg"
+                  class="bg-[#171717] w-full h-10 flex items-center p-6 rounded-lg"
                 >
                   <input
-                    class="bg-[#222] outline-none text-[#555] w-full"
+                    class="bg-[#171717] outline-none text-[#555] w-full"
                     type="text"
                     name="1name"
                     id="1name"
@@ -120,10 +120,10 @@
               <div class="flex flex-col flex-1 gap-2">
                 <label for="2name">Last Name</label>
                 <div
-                  class="bg-[#222] w-full h-10 flex items-center p-6 rounded-lg"
+                  class="bg-[#171717] w-full h-10 flex items-center p-6 rounded-lg"
                 >
                   <input
-                    class="bg-[#222] outline-none text-[#555] w-full"
+                    class="bg-[#171717] outline-none text-[#555] w-full"
                     type="text"
                     name="2name"
                     id="2name"
@@ -136,10 +136,10 @@
               <div class="flex flex-col flex-1 gap-2 w-2">
                 <label for="time">Date & Time</label>
                 <div
-                  class="bg-[#222] w-full h-10 flex items-center p-6 rounded-lg"
+                  class="bg-[#171717] w-full h-10 flex items-center p-6 rounded-lg"
                 >
                   <input
-                    class="bg-[#222] outline-none text-[#555] w-full"
+                    class="bg-[#171717] outline-none text-[#555] w-full"
                     type="datetime-local"
                     name="time"
                     id="time"
@@ -151,10 +151,10 @@
               <div class="flex flex-col flex-1 gap-2">
                 <label for="no">Phone</label>
                 <div
-                  class="bg-[#222] w-full h-10 flex items-center p-6 rounded-lg"
+                  class="bg-[#171717] w-full h-10 flex items-center p-6 rounded-lg"
                 >
                   <input
-                    class="bg-[#222] outline-none text-[#555] w-full"
+                    class="bg-[#171717] outline-none text-[#555] w-full"
                     type="number"
                     name="no"
                     id="no"
@@ -167,10 +167,10 @@
               <label for="email">Email</label>
 
               <div
-                class="bg-[#222] w-full h-10 flex items-center p-6 rounded-lg"
+                class="bg-[#171717] w-full h-10 flex items-center p-6 rounded-lg"
               >
                 <input
-                  class="bg-[#222] outline-none text-[#555] w-full"
+                  class="bg-[#171717] outline-none text-[#555] w-full"
                   type="email"
                   name="email"
                   id="email"
@@ -181,7 +181,7 @@
                 <select
                   name="timezone"
                   id="timezone"
-                  class="bg-[#222] h-6 outline-none text-[#555] w-full rounded-lg"
+                  class="bg-[#171717] h-6 outline-none text-[#555] w-full rounded-lg"
                 >
                   <option value="-12:00,0">
                     (-12:00) International Date Line West
@@ -297,7 +297,7 @@
               </div>
               <div class="w-full h-10 flex items-center mt-6 justify-center">
                 <input
-                  class="bg-[#222] h-10 outline-none text-[#555] duration-500 hover:bg-[#BA68CA] hover:text-black w-2/6 rounded-lg"
+                  class=" h-10 outline-none  duration-500 bg-[#BA68CA] text-black w-2/6 rounded-lg"
                   type="submit"
                   value="Submit"
                 />
@@ -319,9 +319,9 @@
                 Lamp Agency
               </h2>
             </div>
-            <div class="flex-[3_3_0%] flex text-[#333] p-4  flex-col">
-              <div class="flex-1 text-[4.5vh] md:text-[2.5vw] flex w-full items-center justify-center">
-                <h1 class="text-center "> <strong>Book a free Zoom call</strong> </h1>
+            <div class="flex-[3_3_0%] flex text-[#333] p-4 gap-4 flex-col">
+              <div class="flex-1 text-[4vh] md:text-[2vw] flex w-full items-center justify-center">
+                <h1 class="text-center "> Book a free Zoom call</h1>
               </div>
               <div class="flex-[3_3_0%] w-full h-full flex flex-col gap-4 justify-center">
                 <div class="flex gap-4 items-center">
@@ -347,12 +347,12 @@
       </section>
       <!-- Coypright -->
       <footer>
-        <div class="flex h-14 bg-[#BA68CA] text-[#333] w-screen items-center justify-between p-6 text-sm">
-          <h5>2022 © Lamp Agency</h5>
+        <div class="flex h-14 bg-[#171717] text-[#333] w-screen items-center justify-between p-6 text-sm">
+          <h5 class="text-sm">2022 © Lamp Agency</h5>
           <div class="flex gap-4 text-xs ">
-            <span><a href="https://www.flaticon.com/free-icons/lamp" title="lamp icons">Lamp icons created by Pixel perfect - Flaticon</a></span>
-            <span><a target="_blank" href="https://icons8.com/icon/59795/globe"></a> Icons by <a target="_blank" href="https://icons8.com">Icons8</a></span>
-            <span><a href="https://storyset.com/people">Illustrations by Storyset</a></span>
+            <span><a href="https://www.flaticon.com/free-icons/lamp" title="lamp icons">- Flaticon</a></span>
+            <span><a target="_blank" href="https://icons8.com">- Icons8</a></span>
+            <span><a href="https://storyset.com/people">- Storyset</a></span>
           </div>
         </div>
       </footer>
